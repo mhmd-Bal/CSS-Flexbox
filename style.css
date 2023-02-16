@@ -14,6 +14,8 @@ h3{
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  border: 2px solid black;
+  margin-top: 2px;
 }
 
 .Logo-block{
@@ -33,6 +35,14 @@ h3{
 
 .Buttons-block > button{
   margin: 5px;
+  width: 30%;
+  height: 30px;
+  border-radius: 5px;
+  background-color: orange;
+}
+
+.Buttons-block > button:hover{
+  background-color: yellow;
 }
 
 ul{
@@ -70,9 +80,23 @@ li{
 }
 
 
+
+.Image-block{
+  height: 60%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 5px;
+}
+
 .Item-image{
   width: 100%;
   height: 60%;
+}
+
+.Item-details{
+  max-height: 40%;
+  word-wrap: break-word;
 }
 
 .Item-description{
@@ -88,4 +112,15 @@ li{
 .Item-price{
   padding-left: 10px;
   margin-top: 0px;
+}
+
+
+
+@media only screen and (max-width: 413){
+  .Item-block{
+    width: 100%;
+    background-color: rgb(241, 237, 231);
+    border: 2px solid rgb(212, 211, 211);
+    border-radius: 5px;
+  }
 }
