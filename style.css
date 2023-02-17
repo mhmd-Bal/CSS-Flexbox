@@ -30,7 +30,7 @@ h3{
 .Buttons-block{
   width: auto;
   align-self: center;
-  display: flex;
+  /* display: flex; */
 }
 
 .Buttons-block > button{
@@ -91,33 +91,40 @@ li{
 
 .Item-block{
   width: 22%;
+  /* height: fit-content; */
   background-color: rgb(241, 237, 231);
   border: 2px solid rgb(212, 211, 211);
   border-radius: 5px;
 }
 
-
-
 .Image-block{
-  height: 60%;
-  display: flex;
-  align-items: center;
-  background-color: white;
+  height: 50%;
+  /* display: flex;
+  align-items: center; */
   padding: 5px;
 }
 
-.Item-image{
-  width: 100%;
-  height: 60%;
+.Item-details{
+  /* max-height: fit-content; */
+  height: fit-content;
+  /* background-color: rgb(156, 156, 248); */
+  overflow-wrap: break-word;
 }
 
-.Item-details{
-  max-height: 40%;
-  word-wrap: break-word;
+/* .Item-sub-div{
+  max-height: 50%;
+  overflow-wrap: break-word;
+} */
+
+.Item-image{
+  width: 100%;
+  height: 100%;
 }
 
 .Item-description{
   padding-left: 10px;
+  /* width: 50px;
+  overflow-wr: break-word; */
 }
 
 .Item-company{
@@ -153,6 +160,8 @@ li{
     flex-basis: 100%;
   }
 
+  
+
   /* .Row{
     flex-wrap: wrap;
   }
@@ -161,4 +170,16 @@ li{
     flex-basis: 100%;
   } */
 
+}
+
+@media (max-width: 500px) {
+
+  .Item-block{
+    flex-basis: 100%;
+  }
+
+  .Item-details{
+    width: 300px;
+  }
+  
 }
