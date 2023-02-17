@@ -72,6 +72,24 @@ li{
   gap: 20px;
 }
 
+.Allitems-block{
+  padding-left: 50px;
+  padding-top: 20px;
+}
+
+/* .Row{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.Column{
+  flex: 1;
+  background-color: rgb(241, 237, 231);
+  border: 2px solid rgb(212, 211, 211);
+  border-radius: 5px;
+} */
+
 .Item-block{
   width: 22%;
   background-color: rgb(241, 237, 231);
@@ -115,12 +133,33 @@ li{
 }
 
 
+@media (max-width: 1000px){
 
-@media only screen and (max-width: 413){
   .Item-block{
-    width: 100%;
-    background-color: rgb(241, 237, 231);
-    border: 2px solid rgb(212, 211, 211);
-    border-radius: 5px;
+    flex-basis: 40%;
   }
+
+  /* .Row{
+    flex-wrap: wrap;
+  }
+
+  .Column{
+    flex-basis: 40%;
+  } */
+
+}
+
+@media (max-width: 612px){
+  .Item-block{
+    flex-basis: 100%;
+  }
+
+  /* .Row{
+    flex-wrap: wrap;
+  }
+
+  .Column{
+    flex-basis: 100%;
+  } */
+
 }
